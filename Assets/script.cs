@@ -28,18 +28,26 @@ public class script : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(x, -0.2f, z);
+            transform.Rotate(x, -0.5f, z);
             a.Play("Walk In Place");
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(x, 0.1f, z);
+            transform.Rotate(x, 0.5f, z);
             a.Play("Walk In Place");
         }
         else if (Input.GetKey(KeyCode.Q))
         {
             transform.Translate(x, y, 0.05f);
             a.Play("Run In Place");
+        }
+        else if (Input.GetKey(KeyCode.R))
+        {
+            a.Play("Turn Head");
+        }
+        else if (Input.GetKey(KeyCode.E))
+        {
+            a.Play("Eat");
         }
         else
         {
